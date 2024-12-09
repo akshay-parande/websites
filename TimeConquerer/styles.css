@@ -1,0 +1,134 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    /* background-image:url(https://d3lzcn6mbbadaf.cloudfront.net/media/details/pjimage_720220524083948.jpg); */
+    background-size: 80%;
+    backdrop-filter:calc(10%)
+
+}
+
+/* Add this CSS to your styles.css file */
+
+#articles-section {
+    display: none;
+    padding: 20px;
+}
+
+#articles-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+#articles-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+#articles-section ol {
+    margin-top: 20px;
+}
+
+#articles-section ol li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#articles-section ol li:before {
+    content: counter(article-counter) ". ";
+    counter-increment: article-counter;
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Daily events section styles */
+#home-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#home-section h2 {
+    font-size: 24px;
+}
+
+.icon-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon.disabled {
+    opacity: 0.5; /* Example styling for disabled icons */
+    pointer-events: none; /* Prevent further clicks on disabled icons */
+}
+
+
+.icon {
+    width: 200px;
+    height: 120px;
+    background-color: #da7d7d;
+    margin: 10px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-event-icon {
+    width: 200px;
+    height: 120px;
+    background-color: #da7d7d;
+    margin: 10px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
