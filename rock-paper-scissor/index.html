@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="gamecanvas">
+        <div class="headertitle">
+            <div class="gamename">
+                <h2>
+                    <center>
+                        Rock-Paper-Scissor
+                    </center>
+                </h2>
+            </div>
+            <div class="scorecard">
+                <div class="score"><h3><pre>Score : </pre></h3><h3 id="score"></h3></div>
+                <div class="score"><h3><pre>HI : </pre></h3><h3 id="highscore"></h3></div>
+
+            </div>
+        </div>
+        <div>
+            <h3>Computer Side</h3>
+            <div class="computer-deck">
+                <div class="card" id="computer-rock">
+                    <img name="computer-rock"
+                        src="rock.avif" alt=""
+                        width="150">
+                </div>
+                <div class="card" id="computer-paper">
+                    <img name="computer-paper"
+                        src="paper.avif"
+                        alt="" width="150">
+                </div>
+                <div class="card" id="computer-scissors">
+                    <img name="computer-scissors"
+                        src="scissor.avif" alt=""
+                        width="150">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>User Side</h3>
+            <div class="user-deck">
+                <div class="card" id="user-rock">
+                    <img name="user-rock"
+                        src="rock.avif" alt=""
+                        width="150">
+                </div>
+                <div class="card" id="user-paper">
+                    <img name="user-paper"
+                        src="paper.avif"
+                        alt="" width="150">
+                </div>
+                <div class="card" id="user-scissors">
+                    <img name="user-scissors"
+                        src="scissor.avif" alt=""
+                        width="150">
+                </div>
+            </div>
+        </div>
+        <div><h3 class="win" id="win"></h3></div>
+        <h1 id="mousepos"></h1>
+    </div>
+    <script src="runf1.js"></script>
+</body>
+</html>
