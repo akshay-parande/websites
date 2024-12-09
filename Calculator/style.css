@@ -1,0 +1,151 @@
+/* Light mode (default) */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px 0;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+div {
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#outerborder, #cal {
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+#modecontainer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #6200ea;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#modeChainge {
+    width: 30px;
+    cursor: pointer;
+    filter: invert(100%);
+    transition: filter 0.3s ease;
+}
+
+#header {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6200ea;
+}
+
+#cal {
+    width: 350px;
+    margin: 20px auto;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    resize: none;
+    overflow-y: scroll;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid #6200ea;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+}
+
+#_buttons {
+    margin: 10px auto;
+    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+input[type="button"] {
+    font-size: 1rem;
+    height: 50px;
+    width: 70px;
+    margin: 5px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #3700b3;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: #6200ea;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+div.dark-mode {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+#outerborder.dark-mode, #cal.dark-mode {
+    border: 2px solid #f0f0f0;
+}
+
+#modecontainer.dark-mode {
+    background-color: #3700b3;
+}
+
+#display.dark-mode {
+    background-color: #222;
+    color: #f0f0f0;
+    border: 2px solid #bb86fc;
+}
+
+input[type="button"].dark-mode {
+    background-color: #bb86fc;
+    color: #000;
+}
+
+input[type="button"].dark-mode:hover {
+    background-color: #6200ea;
+}
+
+footer.dark-mode {
+    color: #bb86fc;
+}
+
+/* Smooth transition for all elements when switching modes */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
